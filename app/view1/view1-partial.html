@@ -1,0 +1,21 @@
+<div class="row-fluid" ng-controller="view1-controller">
+    <h2>Hop Listing</h2>
+    <table class="table table-bordered">
+        <thead>
+            <th></th>
+            <th>Name</th>
+            <th>Origin</th>
+            <th>Use</th>
+            <th>Notes</th>
+            <th>Alpha</th>
+        </thead>
+        <tr ng-repeat="hop in hops | limitTo:5">
+            <td><button class="btn btn-block" ng-click="onEdit(hop)">Edit</button><button class="btn btn-block" ng-click="onDelete(hop)">Delete</button></td>
+            <td>{{hop.Name}}</td>
+            <td>{{hop.Origin}}</td>
+            <td>{{hop.Use}}</td>
+            <td>{{hop.Notes}}</td>
+            <td>{{hop.Alpha}}</td>
+        </tr>
+    </table>
+</div>

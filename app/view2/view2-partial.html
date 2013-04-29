@@ -1,0 +1,43 @@
+<div class="row-fluid" ng-controller="view2-controller" ng-show="hop">
+    <h2>Edit Hop Detail</h2>
+    <form class="form-horizontal" name="hopForm">
+        <div class="control-group">
+            <label class="control-label" for="Name">
+                <div class="controls">
+                    <input type="text" id="Name" name="Name" class="input-large" ng-model="hop.Name">
+                </div>
+            </label>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Origin">
+                <div class="controls">
+                    <input type="text" id="Origin" name="Origin" class="input-large" ng-model="hop.Origin">
+                </div>
+            </label>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Use">
+                <div class="controls">
+                    <input type="text" id="Use" name="Use" class="input-large" ng-model="hop.Use">
+                </div>
+            </label>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Notes">
+                <div class="controls">
+                    <textarea id="Notes" name="Notes" class="input-large" rows="6" ng-model="hop.Notes"></textarea>
+                </div>
+            </label>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="Alhpa">
+                <div class="controls">
+                    <input type="text" id="Alpha" name="Alpha" class="input-large" ng-model="hop.Alpha">
+                </div>
+            </label>
+        </div>
+        <div class="control-group">
+            <button class="btn btn-primary" ng-click="onSave()">Save</button> <button class="btn btn-warning" ng-click="onCancel()">Cancel</button>
+        </div>
+    </form>
+</div>
